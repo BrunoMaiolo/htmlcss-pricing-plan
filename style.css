@@ -37,42 +37,35 @@ body {
 
 
 
+
+
 .fake-toggle {
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    gap: 12px;
-    font-size: 14px;
-    font-weight: 600;
+    gap: 4px;
+    padding: 3px;
+    background: #f3efff;           
+    border-radius: 999px;          
 }
 
-.fake-toggle span {
+.toggle-btn {
+    border: none;
+    background: transparent;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: default;               
     color: #777;
 }
 
-.fake-toggle .active-label {
-    color: #000;               
-    font-weight: 700;
-}
 
-.toggle-box {
-    width: 55px;
-    height: 28px;
-    background: #ece6ff;        
-    border-radius: 20px;
-    padding: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    box-shadow: inset 0 0 4px rgba(0,0,0,0.15);
-}
-
-.toggle-circle {
-    width: 20px;
-    height: 20px;
+.toggle-btn.active {
     background: #ffffff;
-    border-radius: 50%;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    color: #000;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.12);
 }
+
 
 
 
