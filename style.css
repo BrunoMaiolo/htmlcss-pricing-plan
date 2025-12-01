@@ -1,0 +1,197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #000000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;    
+    gap: 20px;
+}
+
+.header h1 {
+    font-size: 40px;
+    margin-bottom: 8px;
+}
+
+.header p {
+    font-size: 14px;
+    color: #777;
+    max-width: 500px;
+}
+
+
+.fake-toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.active-label {
+    font-weight: bold;
+}
+
+.toggle-box {
+    width: 40px;
+    height: 20px;
+    background: #000;
+    padding: 3px;
+    border-radius: 20px;
+}
+
+.toggle-circle {
+    width: 14px;
+    height: 14px;
+    background: #fff;
+    border-radius: 50%;
+}
+
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;     
+    gap: 30px;           
+    margin-top: 40px;
+    justify-content: center;
+}
+
+
+.card {
+    flex: 1 1 calc((100% - (30px * 2)) / 3);
+    min-width: 260px;      
+    background: #ffffff;
+    border-radius: 26px;
+    padding: 32px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+.card h2 {
+    font-size: 26px;
+}
+
+.subtitle {
+    font-size: 12px;
+    color: #777;
+    margin-top: 4px;
+}
+
+
+.price-row {
+    display: flex;
+    gap: 6px;
+    margin-top: 20px;
+    align-items: flex-end;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+.currency {
+    font-size: 22px;
+}
+
+.price {
+    font-size: 48px;
+}
+
+.per {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 6px;
+}
+
+
+.badge-row {
+    margin-top: 12px;
+    display: flex;
+    gap: 8px;
+    font-size: 13px;
+}
+
+.badge {
+    background: #eeeeee;
+    padding: 3px 8px;
+    border-radius: 10px;
+    font-size: 11px;
+}
+
+
+.btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 999px;
+    border: none;
+    background: #6c00ff;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.features {
+    margin-top: 24px;
+    list-style: none;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 0;
+    font-size: 14px;
+}
+
+.features li {
+    flex: 1 1 50%;      
+    min-width: 150px;   
+    margin-bottom: 4px;
+}
+
+.off {
+    color: #777777;
+}
+
+
+.featured {
+    background: #6c00ff;
+    color: #ffffff;
+}
+
+.featured .subtitle,
+.featured .per,
+.featured .badge-row {
+    color: #e8ddff;
+}
+
+.badge-featured {
+    background: #f1e9ff;
+    color: #000;
+    font-weight: bold;
+}
+
+.btn-light {
+    background: #ffffff;
+    color: #6c00ff;
+}
+
+.off-light {
+    color: #e0d2ff;
+}
+
+
