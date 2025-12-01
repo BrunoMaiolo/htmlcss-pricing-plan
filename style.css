@@ -36,31 +36,44 @@ body {
 }
 
 
+
 .fake-toggle {
     display: flex;
     align-items: center;
-    gap: 8px;
+    gap: 12px;
     font-size: 14px;
+    font-weight: 600;
 }
 
-.active-label {
-    font-weight: bold;
+.fake-toggle span {
+    color: #777;
+}
+
+.fake-toggle .active-label {
+    color: #000;               
+    font-weight: 700;
 }
 
 .toggle-box {
-    width: 40px;
-    height: 20px;
-    background: #000;
-    padding: 3px;
+    width: 55px;
+    height: 28px;
+    background: #ece6ff;        
     border-radius: 20px;
+    padding: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-shadow: inset 0 0 4px rgba(0,0,0,0.15);
 }
 
 .toggle-circle {
-    width: 14px;
-    height: 14px;
-    background: #fff;
+    width: 20px;
+    height: 20px;
+    background: #ffffff;
     border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
+
 
 
 .cards {
