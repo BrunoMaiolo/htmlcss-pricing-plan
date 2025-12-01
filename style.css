@@ -36,42 +36,44 @@ body {
 }
 
 
-
-
-
-
-
-.fake-toggle {
+.toggle-wrapper {
     display: flex;
     align-items: center;
-    gap: 6px;                      
+    gap: 10px;
 }
 
-
-.toggle-btn {
-    padding: 6px 16px;
-    font-size: 13px;
+.toggle-label {
+    font-size: 14px;
     font-weight: 600;
-    border-radius: 999px;
-    border: none;
-    cursor: default;                
+    color: #777;
 }
 
+.toggle-label.active-text {
+    color: #000;     
+}
 
-.toggle-btn.active {
+.toggle-switch {
+    width: 50px;
+    height: 26px;
+    background: #cfcfcf;      
+    border-radius: 30px;
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s;
+    position: relative;
+}
+
+/* PALLINO CHE SIMULA L’ON */
+.toggle-knob {
+    width: 20px;
+    height: 20px;
     background: #ffffff;
-    color: #000000;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    transition: transform 0.3s;
+    transform: translateX(0);     
 }
-
-
-.toggle-btn.off {
-    background: #000000;
-    color: #ffffff;
-}
-
-
-
 
 
 .cards {
